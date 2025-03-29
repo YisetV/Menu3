@@ -1,0 +1,140 @@
+body{
+    background-color: rgba(219, 195, 219, 0.973);
+   
+}
+
+header
+{
+    background-color: #3abecf;
+    text-align: center; 
+    padding: 0; /*definir el espacio interno entre el contenido de un elemento y su borde.*/
+    margin: 0;
+    width: 100%;
+}
+.menuCSS ul {
+    display: flex;
+    padding: 0; /*definir el espacio interno entre el contenido de un elemento y su borde.*/
+    margin: 0; /*definir el espacio externo alrededor de un elemento*/
+    list-style: none; /*se utiliza para personalizar el estilo de las listas */
+}
+.menuCSS a {
+    display: block;
+    padding: 1em 2em; /* Ajuste del padding */
+    background-color: #8ed8e2;
+    text-decoration: none;
+    color: #191C26;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+    text-align: center; 
+    width: 383px; 
+}
+.menuCSS a:hover {
+    background-color: #8f6281;
+}
+
+.menuCSS ul li {
+    position: relative; /* Necesario para el submenú */
+}
+.menuCSS ul li ul {
+    display: none;
+    position: absolute; /* Posiciona el submenú */
+    top: 100%; /* Muestra el submenú debajo del elemento padre */
+    left: 0;
+    padding: 0; /* Elimina padding del submenú */
+    margin: 0;
+    list-style: none;
+    background-color: #3ce3f9; /* Color de fondo del submenú */
+}
+
+
+.menuCSS ul li:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+.logocss{
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen manteniendo la proporción */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: transform 0.5s ease; 
+}
+.logocss:hover{
+    transform: scale(1.2); /* Aumenta el tamaño un 20% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.logojava{
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen manteniendo la proporción */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: transform 0.5s ease; 
+}
+.logojava{
+    transform: scale(1.2); /* Aumenta el tamaño un 20% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.menuCSS ul li ul li a {
+    padding: 1em; /* Ajusta el padding para los elementos */
+}
+
+.texto-negrita
+{
+    font-weight: bold; /*texto en negrito*/
+}
+@media (max-width: 768px) {
+    .menuCSS ul {
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+    }
+
+    .menuCSS ul li {
+        width: 100%; /* Asegura que cada elemento ocupe el 100% del ancho */
+    }
+.menuCSS a {
+        padding: 1em; /* Mantiene el tamaño adecuado */
+        text-align: center; /* Centra el texto en los elementos del menú */
+    }
+
+    /* Hacer que el submenú sea más accesible en móviles */
+    .menuCSS ul li ul {
+        position: static; /* Cambia la posición para que el submenú se muestre debajo del elemento principal */
+        display: none;
+    }
+
+}
+
+
+table {
+    width: 80%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Elimina el espacio entre los bordes */
+    margin: 20px auto; /* Centra la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tabla */
+}
+
+
+/* Estilo para las celdas (th y td) */
+th, td {
+    border: 2px solid #4ca8af; /* Bordes verdes */
+    padding: 12px; /* Espacio interno en las celdas */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para el encabezado */
+th {
+    background-color: #4c5eaf; /* Fondo verde */
+    color: white; /* Texto blanco */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+/* Hover: efecto al pasar el cursor */
+tr:hover {
+    background-color: #c8e6c9; /* Fondo verde claro al pasar el mouse */
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris claro en filas pares */
+}
+footer {
+    background-color: #8ed8e2; /* Color de fondo */
+    color: rgb(15, 7, 7); /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno */
+    margin: 0;
+  }
